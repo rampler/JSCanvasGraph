@@ -1,0 +1,8 @@
+body {
+    margin-top: 15px;
+}
+
+#board {
+    width: 100%;
+    height: calc(100vh - 30px);
+}
