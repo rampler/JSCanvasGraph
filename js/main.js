@@ -12,3 +12,8 @@ var test3Node = new jsCanvasGraph.createNode(graph,3,550,50);
 
 var testEdge = new jsCanvasGraph.linkNodes(graph,test1Node,test2Node);
 var test2Edge = new jsCanvasGraph.linkNodes(graph,test2Node,test3Node);
+
+//Buttons actions
+$('#clearBtn').click(function(){
+    jsCanvasGraph.clearGraph(graph);
+});
