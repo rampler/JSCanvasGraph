@@ -27,7 +27,7 @@ $('#file-input').change(function (e) {
     reader.onload = function (e) {
         var contents = e.target.result;
         //try {
-            jsCanvasGraph.loadGraph(graph, JSON.parse(contents));
+            graph = jsCanvasGraph.loadGraph(graph, JSON.parse(contents));
         //}
         //catch (e) { alert("Error during loading file!"); }
     };
