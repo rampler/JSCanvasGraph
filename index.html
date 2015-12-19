@@ -15,7 +15,9 @@
         <div class="panel-body">
             <button type="button" class="btn btn-default btn-block" id="addBtn"><i class="glyphicon glyphicon-unchecked"></i> Add Node</button>
             <button type="button" class="btn btn-default btn-block" id="fitBtn"><i class="glyphicon glyphicon-equalizer"></i> Fit to grid</button>
-            <button type="button" class="btn btn-default btn-block" id="loadBtn"><i class="glyphicon glyphicon-open-file"></i> Load</button>
+            <button class="btn btn-default btn-block btn-file" id="loadBtn">
+                <i class="glyphicon glyphicon-open-file"></i> Load <input type="file" id="file-input" />
+            </button>
             <button type="button" class="btn btn-default btn-block" id="saveBtn"><i class="glyphicon glyphicon-floppy-save"></i> Save</button>
             <button type="button" class="btn btn-default btn-block" id="clearBtn"><i class="glyphicon glyphicon-erase"></i> Clear</button>
         </div>
@@ -29,6 +31,7 @@
 <script src="lib/jQueryUI/jquery-ui.js" type="application/javascript"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
 <script src="lib/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js" type="application/javascript"></script>
+<script src="lib/FileSaver/FileSaver.min.js" type="application/javascript"></script>
 <script src="lib/jsCanvasGraph/jsCanvasGraph.js" type="application/javascript"></script>
 <script src="js/main.js" type="application/javascript"></script>
 </body>
