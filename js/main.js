@@ -26,10 +26,12 @@ $('#file-input').change(function (e) {
     var reader = new FileReader();
     reader.onload = function (e) {
         var contents = e.target.result;
-        //try {
+        try {
             graph = jsCanvasGraph.loadGraph(graph, JSON.parse(contents));
-        //}
-        //catch (e) { alert("Error during loading file!"); }
+            var $fileInput = $('#file-input');
+            $fileInput.replaceWith($fileInput.clone(true));
+        }
+        catch (e) { alert("Error during loading file!"); }
     };
     reader.readAsText(file);
 });
