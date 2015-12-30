@@ -24,3 +24,8 @@ body {
     display: block;
 }
 
+.btn-snap {
+    padding: 0;
+    margin: 5px 0;
+}
+

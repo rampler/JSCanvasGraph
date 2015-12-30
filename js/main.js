@@ -35,3 +35,11 @@ $('#file-input').change(function (e) {
     };
     reader.readAsText(file);
 });
+
+$('#snap-to-grid-checkbox').change(function(){
+    if($('#snap-to-grid-checkbox').is(':checked'))
+        jsCanvasGraph.snapToGrid(graph,true);
+    else
+        jsCanvasGraph.snapToGrid(graph,false);
+
+});
